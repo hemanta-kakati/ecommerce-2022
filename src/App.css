@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+*,
+a {
+  color: rgb(51, 51, 51);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
+  color: rgb(128, 128, 128);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav .link-item {
+  padding: 0 15px;
+}
+
+nav .link-item a {
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section#hero {
+  padding: 0;
+}
+
+section .heading {
+  padding: 20px 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/********** Products category ************/
+.cat-card {
+  border: 1px solid rgb(211, 211, 211);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0;
 }
+
+.cat-card .img-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.cat-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.cat-card .cat-content {
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cat-card .cat-content a {
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.cat-card .cat-content a:hover {
+  text-decoration: underline;
+}
+
+/* .cat-card.earbuds {
+  background: url("./assets/images/earbuds.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+} */
